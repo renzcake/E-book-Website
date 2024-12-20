@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="homeLogo">E-book</div>
+        <button class="book-list-button" id="bookListButton">Book List</button>
+    </header>
+
+    <div class="content" id="homeContent">
+        <h1>E-book</h1>
+        <p>Welcome to E-book! Here, you can manage a collection of books by performing CRUD operations. 
+           Add new books, update their details, delete books, and view the entire list of your collection.
+        </p>
+    </div>
+
+    <div class="blank-page" id="blankPage"></div>
+
+    <script>
+        const bookListButton = document.getElementById('bookListButton');
+        const homeLogo = document.getElementById('homeLogo');
+        const homeContent = document.getElementById('homeContent');
+        const blankPage = document.getElementById('blankPage');
+
+        bookListButton.addEventListener('click', () => {
+            homeContent.style.display = 'none';
+            blankPage.style.display = 'block';
+        });
+
+        homeLogo.addEventListener('click', () => {
+            blankPage.style.display = 'none';
+            homeContent.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

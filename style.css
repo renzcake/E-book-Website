@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.book-list-button {
+    font-size: 16px;
+    background: white;
+    color: lightgreen;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book-list-button:hover {
+    background-color: white;
+    color: darkgreen;
+    border-color: darkgreen;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20%;
+    color: lightgreen;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.content p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: darkgreen;
+}
+
+.blank-page {
+    display: none;
+}
